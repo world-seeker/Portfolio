@@ -34,7 +34,7 @@ export default function Home() {
 
      <Link href="#hero">
       <footer className='sticky bottom-5 w-full bg-repeat-'>
-         <div><img src="/footer.jpeg" alt="footer" /></div>
+         <div></div>
       </footer>
      </Link>
 
