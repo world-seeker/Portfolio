@@ -19,6 +19,7 @@ function Project({}: Props) {
       scrollbar-track-y-400/20 scrollbar-thumb-[#F7AB0A]/80 '>
         {projects. map((project,i)=>(
           <motion.div
+            key={`project-${i}`}
             initial={{y:-300,opacity:0}} 
             transition={{duration:1.2}}
             whileInView={{opacity:1,y:0}}

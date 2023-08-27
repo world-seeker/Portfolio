@@ -13,17 +13,15 @@ function Hero({}: Props) {
         loop:true,
         delaySpeed:2000,
     });
-return<div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+return(<div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
     <BackgroundCircles/>
     <Image
-    className='relative  rounded-full h-32 w-32 mx-auto object-cover
-     ' 
+    className='relative  rounded-full h-32 w-32 mx-auto object-cover' 
     src={'/main.jpeg'} 
     width={100} 
     height={0}
     alt={''}/>
     <div className='z-20'>
-
     <h2 className='text-gray-500 uppercase pb-2 tracking-[15px] '>SOFTWARE ENGINEER</h2>
     <div className='relative top-2'>
          <h1 className="text-5xl lg:text-6xl font-semibold px-10">
@@ -32,8 +30,6 @@ return<div className='h-screen flex flex-col space-y-8 items-center justify-cent
         </h1>
     </div>
     <div className='pt-5'>
-
-
         <Link href="#about">
         <button className='heroButton'>
             About
@@ -52,7 +48,7 @@ return<div className='h-screen flex flex-col space-y-8 items-center justify-cent
         </button>
         </Link>
        
-        <Link href="">
+        <Link href="#projects">
         <button className='heroButton'>
             Projects
         </button>
@@ -61,7 +57,7 @@ return<div className='h-screen flex flex-col space-y-8 items-center justify-cent
 
     </div>
     </div>
-    </div>
+    </div>)
   
 }
 

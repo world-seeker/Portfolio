@@ -7,7 +7,8 @@ type Props = {}
 
 function Header({}: Props) {
   return (
-    <header className='sticky top-0 flex items-start justify-between max-w-7xl 
+    <>
+    <div className='sticky top-0 flex items-start justify-between max-w-7xl 
     xl:items-center mx-auto z-20 p-5 '>
      
         <motion.div
@@ -42,7 +43,7 @@ function Header({}: Props) {
          fgColor=''
          />
         </motion.div>
-         <Link href='#contact'>
+         
          <motion.div
             initial={{
               x:500,
@@ -58,15 +59,20 @@ function Header({}: Props) {
               duration:1,
             }}
          className='flex flex-row items-center cursor-pointer'>
-         <SocialIcon
+        
+        <SocialIcon
+        url='#contact'
          network="email"
          bgColor='transparent'
          fgColor='gray'
          />
+         <Link href={"contact"}>
          <p className='font-bold uppercase text-sm md:inline-flex hidden'>get in touch</p>
-         </motion.div>
          </Link>
-    </header>
+         </motion.div>
+    
+    </div>
+    </>
   )
 }
 
