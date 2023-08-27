@@ -33,8 +33,12 @@ export default function Home() {
      </section>
 
      <Link href="#hero">
-      <footer className='sticky bottom-5 w-full bg-repeat-'>
-         <div></div>
+      <footer className='sticky bottom-5 w-full cursor-pointer'>
+         <div className='flex items-center justify-center'>
+            <img
+            className="w-10 h-10 rounded-full filter grayscale hover:grayscale-0" 
+            src="/fot.jpeg" alt="footer" />
+         </div>
       </footer>
      </Link>
 
